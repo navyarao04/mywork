@@ -1,0 +1,25 @@
+#wrapper{
+    width:100%; 
+    text-align:center;
+    padding-top: 10%;
+}
+
+#shoppingLogo{
+    height: 15em;
+}
+
+#passcodensubmit{
+    padding-top: 4%;
+}
+
+button{
+    margin-left: 2%;
+}
+@media only screen and (max-width: 500px) {
+    #wrapper{
+        padding-top: 50%;
+    }
+    #wrapper > img{
+        width:80%;
+    }
+}

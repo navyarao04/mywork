@@ -1,0 +1,54 @@
+<ng4-loading-spinner></ng4-loading-spinner>
+<div class="bg-img">
+<h4 style="padding-left:5em; font-size: 28px;">You have ({{itemCount}} items) in the cart</h4>
+<div class="row">
+  <div *ngFor="let en of allCartOrders" style="padding-bottom:2em;padding-left:2em;" class="col-lg-9">
+    <mat-card class="col-lg-9">
+        <mat-card-header>
+          <mat-card-title>
+            <a href="" style= "color:blue;" class="col-lg-3">{{en.orderName}}</a>
+            <h6 class="col-lg-3">Sold By: {{en.soldBy}}  <p style="color:green;"> In Stock</p>  </h6>
+            <h4 style="text-align:left; color: #B12703" class="col-lg-3">${{en.price}}</h4>
+          </mat-card-title>
+        </mat-card-header>
+      </mat-card>
+  </div>
+  <mat-card class="col-lg-3">
+      <mat-card-header>
+        <mat-card-title>
+          <h3 style= "color:blue" >Subtotal ({{itemCount}} item) : <span style= "color: #B12703">${{total}}</span></h3>
+          <h5 style= "color:blue;" >Shipping : 2.50</h5>
+          <h5 style= "color:blue;" >Tax : 3.24</h5>
+          <hr>
+          <button (click)="checkout(1)" style="text-align:center; background-color:#F3CF75;color:black;font-size: 20px;">Checkout</button>
+        </mat-card-title>
+      </mat-card-header>
+    </mat-card>
+</div>
+
+        <div *ngIf="flag == 1" style="background-color:wheat; text-align:center;padding-bottom:5em;">
+          <h4>Card details</h4>
+            <div id="passcodensubmit">
+                <mat-form-field>
+                    <input class="full-width" matInput required type="text" placeholder="Credit Card Number" #cc>
+                </mat-form-field>
+                <br/>
+                <mat-form-field>
+                    <input class="full-width" matInput required type="text" placeholder="expiration year" #expyear>
+                </mat-form-field>
+                <br/>
+                <mat-form-field>
+                    <input class="full-width" matInput required type="text" placeholder="expiration month" #expmonth>
+                </mat-form-field>
+                <br/>
+                <mat-form-field>
+                    <input class="full-width" matInput required type="text" placeholder="cvv" #cvv>
+                </mat-form-field>
+                <br/>
+                <button style="text-align:center; background-color:#F3CF75;color:black;font-size: 20px;" (click)="validatecc(cc.value, expyear.value, expmonth.value, cvv.value)">Pay</button>
+                <span style="padding-left:5em;">{{errorMsg}}</span>
+            </div> 
+        </div>
+
+</div>
+

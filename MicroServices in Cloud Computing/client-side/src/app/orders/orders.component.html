@@ -1,0 +1,41 @@
+<ng4-loading-spinner></ng4-loading-spinner>
+<div class="bg-img">
+<h4 style="padding-left: 2em; font-size: 28px;">Your Orders</h4>
+<!--<div class="row">
+  <div *ngFor="let en of allOrders" style="padding-bottom:2em;padding-left:2em;" class="col-lg-3">
+    <mat-card>
+        <mat-card-header>
+          <mat-card-title>
+            <h4>Delivered on {{en.orderDate}}</h4>
+            <div class="col-lg-12">
+                <label>{{en.orderName}}</label>
+              </div>
+              <div class="col-lg-12">
+                <label mat-button>{{en.price}}</label>
+              </div>
+              <div class="col-lg-12">
+                <label mat-button> {{en.soldBy}}</label>
+              </div>
+              <div class="col-lg-12">
+                <label mat-button> {{en.orderId}}</label>
+              </div>
+          </mat-card-title>
+        </mat-card-header>
+      </mat-card>
+  </div>
+</div>-->
+<div class="row">
+    <div *ngFor="let en of allOrders" style="padding-bottom:2em;padding-left:2em;" class="col-lg-9">
+      <mat-card class="col-lg-9">
+          <mat-card-header>
+            <mat-card-title>
+                <h4>Delivered on {{en.orderDate}}</h4>
+              <a href="" style= "color:blue;" class="col-lg-3">{{en.orderName}}</a>
+              <h6 class="col-lg-3">Sold By: {{en.soldBy}}  <p style="color:green;"> Qty: 1</p> <button style="background-color:#F3CF75; color:rgb(4, 4, 4)">Buy it again</button> </h6>
+              <h4 style="text-align:right; color: #B12703" class="col-lg-6">${{en.price}}</h4>
+            </mat-card-title>
+          </mat-card-header>
+        </mat-card>
+    </div>
+  </div>
+</div>

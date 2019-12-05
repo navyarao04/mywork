@@ -1,0 +1,20 @@
+<app-header></app-header>
+
+    <div id="wrapper">
+        <img src="assets/IMAGES/shopping.jpg" id="shoppingLogo"/>
+        <div id="passcodensubmit">
+            <mat-form-field>
+                <input class="full-width" matInput required type="email" placeholder="Email id" #email>
+            </mat-form-field>
+            <br/>
+            <mat-form-field>
+                <input class="full-width" matInput required type="password" placeholder="Password" #passCode>
+            </mat-form-field>
+            <br/>
+            <button mat-raised-button color="primary" (click)="login(passCode.value, email.value)">Submit</button>
+        </div>
+        <span>{{errorMsg}}</span>
+    </div>
+
+
+<app-footer></app-footer>
