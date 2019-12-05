@@ -1,0 +1,50 @@
+{
+  "cartOrders": [
+    {
+      "orderName": "U Brands Push Pins, Clear Plastic Head, Steel Point, 200-Count",
+      "price": "2.15",
+      "soldBy": "Amazon Digital Services, Inc."
+    },
+    {
+      "orderName": "Brita Replacement Water Filter for Pitchers, 3 Count",
+      "price": "14.89",
+      "soldBy": " Amazon.com Services, Inc"
+    }
+  ],
+  "email": "navyanrao94@gmail.com"
+}
+
+
+{
+  "email": "navyanrao94@gmail.com",
+  "orders": [
+    {
+      "orderDate": "05/25/2019",
+      "orderId": "76592578256025923",
+      "orderName": "All-new Echo Dot (3rd Gen) - Smart speaker with Alexa - Charcoal",
+      "price": "49.99",
+      "soldBy": "Amazon Digital Services, Inc."
+    },
+    {
+      "orderDate": "01/05/2019",
+      "orderId": "765925782258243225923",
+      "orderName": "AKM Bike Lock, 4-Feet Bike Cable Lock Basic Self Coiling Resettable 5-Digit Combination with Complimentary Mounting Bracket",
+      "price": "10.99",
+      "soldBy": "INFO US."
+    },
+    {
+      "orderDate": "10/20/2018",
+      "orderId": "7659324282258243225923",
+      "orderName": "Bell Air Attack 350 High Volume Bicycle Pump",
+      "price": "9.96",
+      "soldBy": "Amazon.com Services, Inc"
+    }
+  ]
+}
+
+{
+  "email": "navyanrao94@gmail.com",
+  "firstName": "Navya",
+  "lastName": "Rao",
+  "password": "navya1234"
+}
